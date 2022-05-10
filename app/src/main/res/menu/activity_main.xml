@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/sort_by_price_lth"
+        android:orderInCategory="100"
+        android:title="מחיר מהנמוך לגבוה"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/sort_by_price_htl"
+        android:orderInCategory="100"
+        android:title="מחיר מהגבוה לנמוך"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/sort_by_time_nto"
+        android:orderInCategory="100"
+        android:title="זמן מהחדש לישן"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/sort_by_time_otn"
+        android:orderInCategory="100"
+        android:title="זמן מהישן לחדש"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/filter_btn"
+        android:icon="@drawable/ic_filter"
+        android:title="sort"
+        app:showAsAction="always"
+        />
+
+
+</menu>

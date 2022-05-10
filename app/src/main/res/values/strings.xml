@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Bmarket</string>
+    <string name="choose_school_hebrew_txt">בחר בית ספר</string>
+    <string-array name="grades_array">
+        <item>כתה</item>
+        <item>א</item>
+        <item>ב</item>
+        <item>ג</item>
+        <item>ד</item>
+        <item>ה</item>
+        <item>ו</item>
+        <item>ז</item>
+        <item>ח</item>
+        <item>ט</item>
+        <item>י</item>
+        <item>יא</item>
+        <item>יב</item>
+    </string-array>
+
+    <string-array name="condition_array">
+        <item>מצב המוצר</item>
+        <item>חדש</item>
+        <item>כמו חדש</item>
+        <item>משומש</item>
+        <item>דרוש תיקון</item>
+        <item>לא רלוונטי</item>
+    </string-array>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">הגדרות</string>
+    <string name="menu_home">ראשי</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_share">שיתוף</string>
+    <string name="title_activity_check_try">CheckTry</string>
+</resources>

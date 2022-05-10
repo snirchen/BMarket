@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.bmarket02">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".InboxActivity"></activity>
+        <activity android:name=".ChatCamera" />
+        <activity android:name=".ChatActivity" />
+        <activity android:name=".SavedItemsActivity" />
+        <activity android:name=".MyItemsActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_check_try"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ItemInfoActivity" />
+        <activity android:name=".UploadItem2" />
+        <activity android:name=".UploadItem1" />
+        <activity android:name=".ConfirmBookPictureActivity" />
+        <activity android:name=".BooksCamera" />
+        <activity android:name=".About" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".RegisterPage4" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".RegisterPage3" />
+        <activity android:name=".RegisterPage1" />
+        <activity android:name=".RegisterPage2" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

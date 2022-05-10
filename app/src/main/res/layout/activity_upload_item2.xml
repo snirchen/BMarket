@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UploadItem2">
+
+    <ImageButton
+        android:id="@+id/back_btn"
+        android:layout_width="37dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_arrow_back_grey_24dp"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/mikhmoret"
+        android:text="העלאת פריט"
+        android:textColor="#00517a"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <AutoCompleteTextView
+        android:id="@+id/choose_book_edittxt"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/edittext_style"
+        android:drawablePadding="15dp"
+        android:fontFamily="sans-serif"
+        android:hint="שם הספר"
+        android:paddingStart="15dp"
+        android:paddingLeft="20dp"
+        android:paddingEnd="30dp"
+        android:textAlignment="inherit"
+        android:textDirection="rtl"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header" />
+
+    <ImageView
+        android:id="@+id/one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/choose_book_edittxt"
+        app:layout_constraintEnd_toEndOf="@+id/choose_book_edittxt"
+        app:layout_constraintTop_toTopOf="@+id/choose_book_edittxt"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_asterisk" />
+
+    <EditText
+        android:id="@+id/edit_author"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/edittext_style"
+        android:drawablePadding="15dp"
+        android:fontFamily="sans-serif"
+        android:hint="כותב
+"
+        android:paddingStart="15dp"
+        android:paddingLeft="20dp"
+        android:paddingEnd="30dp"
+        android:textAlignment="inherit"
+        android:textDirection="rtl"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/choose_book_edittxt" />
+
+    <ImageView
+        android:id="@+id/two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_author"
+        app:layout_constraintEnd_toEndOf="@+id/edit_author"
+        app:layout_constraintTop_toTopOf="@+id/edit_author"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_asterisk" />
+
+    <EditText
+        android:id="@+id/edit_subject"
+        android:layout_width="354dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/edittext_style"
+        android:drawablePadding="15dp"
+        android:fontFamily="sans-serif"
+        android:hint="מקצוע"
+        android:inputType="text"
+        android:paddingStart="15dp"
+        android:paddingLeft="20dp"
+        android:paddingEnd="30dp"
+        android:textAlignment="inherit"
+        android:textDirection="rtl"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_author" />
+
+    <EditText
+        android:id="@+id/edit_description"
+        android:layout_width="350dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/edittext_style"
+        android:fontFamily="sans-serif"
+        android:gravity="top|right"
+        android:hint="תיאור"
+        android:inputType="textMultiLine"
+        android:padding="20dp"
+        android:scrollbars="vertical"
+        android:textAlignment="inherit"
+        android:textDirection="rtl"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/outline" />
+
+    <ImageView
+        android:id="@+id/three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_subject"
+        app:layout_constraintEnd_toEndOf="@+id/edit_subject"
+        app:layout_constraintTop_toTopOf="@+id/edit_subject"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_asterisk"
+        tools:ignore="DuplicateIds" />
+
+    <ImageView
+        android:id="@+id/outline"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_subject"
+        app:srcCompat="@drawable/edittext_style" />
+
+    <Spinner
+        android:id="@+id/choose_grade_spinner"
+        android:layout_width="330dp"
+        android:layout_height="55dp"
+        app:layout_constraintBottom_toBottomOf="@+id/outline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:textAlignment="inherit"
+        app:layout_constraintStart_toStartOf="@+id/outline"
+        app:layout_constraintTop_toTopOf="@+id/outline"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/outline"
+        app:layout_constraintEnd_toEndOf="@+id/outline"
+        app:layout_constraintTop_toTopOf="@+id/outline"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_asterisk" />
+
+    <Button
+        android:id="@+id/done_btn"
+        android:layout_width="330dp"
+        android:layout_height="100px"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/next_button_style"
+        android:fontFamily="@font/mikhmoret"
+        android:text="סיום"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_description" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="ראשי" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="הגדרות" />
+        <item
+            android:id="@+id/nav_my_items"
+            android:icon="@drawable/ic_user"
+            android:title="הפריטים שלי" />
+        <item
+            android:id="@+id/nav_saved_items"
+            android:icon="@drawable/ic_bookmark_filled"
+            android:title="הפריטים השמורים" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_menu_share"
+            android:title="שיתוף" />
+    </group>
+</menu>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".ChatActivity">
+
+    <ListView
+        android:id="@+id/messages_listview"
+        android:layout_width="match_parent"
+        android:layout_height="612dp"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:listSelector="@drawable/transparent"
+        android:stackFromBottom="true"
+        android:transcriptMode="normal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayoutButtom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayoutTop"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/back_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/transparent"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.375"
+            app:srcCompat="@drawable/ic_arrow_back_grey_24dp"
+            tools:ignore="VectorDrawableCompat" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/chat_picture"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="12dp"
+            android:src="@drawable/default_profile_image"
+            app:layout_constraintBottom_toBottomOf="@+id/back_btn"
+            app:layout_constraintStart_toEndOf="@+id/back_btn"
+            app:layout_constraintTop_toTopOf="@+id/back_btn"
+            app:layout_constraintVertical_bias="0.4" />
+
+        <TextView
+            android:id="@+id/rx_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/back_btn"
+            app:layout_constraintStart_toEndOf="@+id/chat_picture"
+            app:layout_constraintTop_toTopOf="@+id/back_btn"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageButton
+            android:id="@+id/info_btn"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/transparent"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/ic_info_outline_black_24dp"
+            tools:ignore="VectorDrawableCompat" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayoutButtom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" >
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/message_edittext_style"
+            android:ems="10"
+            android:gravity="fill_horizontal"
+            android:hint="כתוב הודעה..."
+            android:inputType="textMultiLine"
+            android:maxLines="5"
+            android:minLines="1"
+            android:paddingLeft="70dp"
+            android:paddingTop="13dp"
+            android:paddingRight="85dp"
+            android:paddingBottom="13dp"
+            android:scrollbars="vertical"
+            android:textColorLink="#2196F3"
+            android:textDirection="inherit"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.157"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/send_image_btn"
+            android:layout_width="41dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="4dp"
+            android:background="@drawable/transparent"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="@+id/editText"
+            app:layout_constraintStart_toStartOf="@+id/editText"
+            app:layout_constraintTop_toTopOf="@+id/editText"
+            app:layout_constraintVertical_bias="0.555"
+            app:srcCompat="@drawable/ic_upload_book_floating"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageButton
+            android:id="@+id/upload_image_btn"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/transparent"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="@+id/editText"
+            app:layout_constraintEnd_toEndOf="@+id/editText"
+            app:layout_constraintTop_toTopOf="@+id/editText"
+            app:srcCompat="@drawable/ic_upload_image_chat_btn"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageButton
+            android:id="@+id/send_voice_messege_btn"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/transparent"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="@+id/upload_image_btn"
+            app:layout_constraintEnd_toStartOf="@+id/upload_image_btn"
+            app:layout_constraintTop_toTopOf="@+id/upload_image_btn"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/ic_microphone"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:id="@+id/send_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/heebo"
+            android:gravity="center"
+            android:text="Send"
+            android:textColor="#008FCE"
+            android:textSize="18sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/send_image_btn"
+            app:layout_constraintEnd_toEndOf="@+id/editText"
+            app:layout_constraintTop_toTopOf="@+id/send_image_btn" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/shadow"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:alpha="0.1"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayoutTop"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutTop"
+        app:srcCompat="@drawable/shadow" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

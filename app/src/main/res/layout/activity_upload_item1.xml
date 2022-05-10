@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UploadItem1">
+
+    <ImageView
+        android:id="@+id/two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@+id/outline"
+        app:layout_constraintTop_toTopOf="@+id/choose_condition_spinner"
+        app:srcCompat="@drawable/ic_asterisk" />
+
+    <EditText
+        android:id="@+id/edit_price"
+        android:layout_width="280dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/edittext_style"
+        android:drawablePadding="15dp"
+        android:fontFamily="sans-serif"
+        android:hint="מחיר בשקלים"
+        android:inputType="number"
+        android:paddingStart="15dp"
+        android:paddingLeft="20dp"
+        android:paddingEnd="30dp"
+        android:textAlignment="inherit"
+        android:textDirection="rtl"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/outline"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/outline"
+        app:layout_constraintTop_toBottomOf="@+id/choose_condition_spinner"
+        app:layout_constraintVertical_bias="0.06" />
+
+    <ImageView
+        android:id="@+id/outline"
+        android:layout_width="280dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/radio_sell"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/radio_buy"
+        app:layout_constraintTop_toBottomOf="@+id/radio_buy"
+        app:layout_constraintVertical_bias="0.157"
+        app:srcCompat="@drawable/edittext_style" />
+
+    <Spinner
+        android:id="@+id/choose_condition_spinner"
+        android:layout_width="260dp"
+        android:layout_height="55dp"
+        android:textAlignment="inherit"
+        app:layout_constraintBottom_toBottomOf="@+id/outline"
+        app:layout_constraintEnd_toEndOf="@+id/outline"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/outline"
+        app:layout_constraintTop_toTopOf="@+id/outline"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/edit_price"
+        app:layout_constraintTop_toTopOf="@+id/edit_price"
+        app:srcCompat="@drawable/ic_asterisk" />
+
+    <ImageView
+        android:id="@+id/one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/radio_sell"
+        app:layout_constraintStart_toEndOf="@+id/radio_sell"
+        app:layout_constraintTop_toTopOf="@+id/radio_sell"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_asterisk" />
+
+    <Button
+        android:id="@+id/next_btn"
+        android:layout_width="330dp"
+        android:layout_height="100px"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="124dp"
+        android:background="@drawable/next_button_style"
+        android:fontFamily="@font/mikhmoret"
+        android:text="המשך"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_description" />
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/mikhmoret"
+        android:text="העלאת פריט"
+        android:textColor="#00517a"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/back_btn"
+        android:layout_width="37dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_arrow_back_grey_24dp"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageView
+        android:id="@+id/radio_buy"
+        android:layout_width="331px"
+        android:layout_height="252px"
+
+        android:layout_marginEnd="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/radio_sell"
+        app:layout_constraintEnd_toStartOf="@+id/radio_sell"
+        app:layout_constraintTop_toTopOf="@+id/radio_sell"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_buy_radio_not_filled"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageView
+        android:id="@+id/radio_sell"
+        android:layout_width="331px"
+        android:layout_height="252px"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="76dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        app:srcCompat="@drawable/ic_sell_radio_filled"
+        tools:ignore="VectorDrawableCompat" />
+</androidx.constraintlayout.widget.ConstraintLayout>

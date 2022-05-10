@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8"
+    tools:context=".ConfirmBookPictureActivity">
+
+    <ImageView
+        android:id="@+id/recapture_btn"
+        android:layout_width="137dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="260dp"
+        android:layout_marginBottom="632dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_recapture_image"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageView
+        android:id="@+id/take_another_picture_btn"
+        android:layout_width="137dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginBottom="568dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/recapture_btn"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_take_another_image"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageView
+        android:id="@+id/done_btn"
+        android:layout_width="137dp"
+        android:layout_height="82dp"
+        android:layout_marginBottom="484dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/take_another_picture_btn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_finish_capturing"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageView
+        android:id="@+id/good_image_alert_image"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/take_another_picture_btn"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_good_image_alert"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageView
+        android:id="@+id/current_image"
+        android:layout_width="700px"
+        android:layout_height="990px"
+        android:background="@drawable/transparent"
+        android:src="@drawable/ic_default_item_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/good_image_alert_image"
+        app:layout_constraintVertical_bias="0.093" />
+
+    <ImageView
+        android:id="@+id/image_2"
+        android:layout_width="220px"
+        android:layout_height="311px"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/transparent"
+        android:src="@drawable/ic_default_item_image"
+        app:layout_constraintBottom_toBottomOf="@+id/image_1"
+        app:layout_constraintEnd_toStartOf="@+id/image_1"
+        app:layout_constraintTop_toTopOf="@+id/image_1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/image_1"
+        android:layout_width="220px"
+        android:layout_height="311px"
+
+        android:layout_marginTop="8dp"
+
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/transparent"
+        android:src="@drawable/ic_default_item_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/current_image"
+        app:layout_constraintVertical_bias="0.028" />
+
+    <ImageView
+        android:id="@+id/image_0"
+        android:layout_width="220px"
+        android:layout_height="311px"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/transparent"
+        android:src="@drawable/ic_default_item_image"
+        app:layout_constraintBottom_toBottomOf="@+id/image_1"
+        app:layout_constraintStart_toEndOf="@+id/image_1"
+        app:layout_constraintTop_toTopOf="@+id/image_1"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
